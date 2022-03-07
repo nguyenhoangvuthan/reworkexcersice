@@ -1,0 +1,9 @@
+{
+	"name": "ADFreworkexcersice",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "57f4acdf-c785-4d74-8978-3e092b7613c4",
+		"tenantId": "c52023da-af69-4493-a601-36b0b97d0c3a"
+	}
+}
