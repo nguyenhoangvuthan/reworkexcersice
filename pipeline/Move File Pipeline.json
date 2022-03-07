@@ -1,9 +1,9 @@
 {
-	"name": "pipeline1",
+	"name": "Move File Pipeline",
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Move Data From Level1 To Level2",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -45,13 +45,19 @@
 				"inputs": [
 					{
 						"referenceName": "Parquet1",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName_In": "userdata1.parquet"
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "Parquet2",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"fileName_Out": "userdata1moved.parquet"
+						}
 					}
 				]
 			}
